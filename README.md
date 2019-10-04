@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/AKnuazev/lab01.svg?branch=master)](https://travis-ci.org/AKnuazev/lab01)
 # Задание 1
 Реализовать парсер данных в формате JSON.
 
