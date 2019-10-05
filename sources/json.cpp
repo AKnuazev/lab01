@@ -295,16 +295,13 @@ void ParceTokens(std::vector<std::any> tokens, std::any& data)
                 key = std::any_cast<std::string>(tokens[0]);
                 std::cout << "Got key:     " << key << std::endl; //marker
                 tokens.erase(tokens.begin());
-                std::cout<<"here 1"<<std::endl;
 
                 if (std::any_cast<char>(tokens[0]) == ':')
                     tokens.erase(tokens.begin());
                 else
                     throw std::exception();
-                std::cout<<"here 2"<<std::endl;
 
                 object_data.insert({ key, GetObject(tokens) });
-                std::cout<<"here 3"<<std::endl;
 
                 if (std::any_cast<char>(tokens[0]) == ',')
                     tokens.erase(tokens.begin());
@@ -315,7 +312,6 @@ void ParceTokens(std::vector<std::any> tokens, std::any& data)
                 }
                 else
                     throw std::exception();
-                std::cout<<"here 4"<<std::endl;
                 std::cout << "_________________________" << std::endl;
             }
         }
